@@ -1,7 +1,8 @@
  *    body {
-      background-color: #2A2A2A;
+      background-color: #ffffff;
           color: #2A2A2A;
           font-style: verdana;
+          margin: 0;
     
      }
      .body h1{
@@ -53,45 +54,42 @@
       object-fit: cover;
     }
     .foglio{
-     color: white;
+     color: rgb(0, 0, 0);
+     padding: 0px 100px;
     }
     .middlepage h2 {
-          color: white;
+          color: rgb(0, 0, 0);
           margin-top: 60px;
           font-size: 24px;
     }
      .middlepage p {
-          color: white;
+          color: rgb(0, 0, 0);
           margin-top: 20px;
           font-size: 16px;
           max-width: 600px;
     }
      .middlepage {
-      max-width: 1666%;
-      border-radius: 10px;
       display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       flex-direction: column;
-      padding: 10px 100px;
+      padding-left: 9%;
       gap: 1px;
-      justify-content: space-between;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      margin-top: 20px;
+      
     }
     .images img{
  
-      width: 100%;
-      object-fit: cover;
+     width: 80%;
       display: block;
       max-width: 500px;
       border-radius: 5%;
-      padding-bottom: 3px;
+      max-height: 600px;
+
 
     }    
     .images {
-      max-width: 90%;
+      max-width: 700%;
       border-radius: 10px;
-      object-fit: cover;
-      display: grid;
+      display: grid; 
       flex-direction: column;
       gap: 0px;
       justify-content: space-between;
@@ -101,20 +99,29 @@
 
     .scrittafoto h2{
      color: #26d288;
-     padding-left: 5%;
+     ;
+     margin-top: 15px;
     }
      .scrittafoto p{
-          color: white;
-          padding-left: 5%;
+          color: rgb(0, 0, 0);
 
       }
 .scrittafoto button{
-     background-color: #ec114f;
+     background-color: #34c5ff;
      color: white;
      padding: 10px 70px;
      cursor: pointer;
-     margin-left: 5%;
+    
      border-radius: 6px;
+}
+.sotto{
+      display: grid;
+      flex-direction: column;
+      max-width: 90%;
+      margin: 0 auto;
+      padding-bottom: 25px;
+      gap: 58px;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 .cons1{
      color: #26d288;
@@ -122,10 +129,10 @@
 }
 .cons1 a:hover {
       text-decoration: underline;
-     color: #ec114f;
+     color: #3c8dad;
 }
 .cons1 a {
-      color: #ec114f;
+      color: #34c5ff;
       text-decoration: none;
 }
 .cons1 img{
@@ -137,9 +144,7 @@
 .consigliati{
  max-width: 90%;
       border-radius: 10px;
-      display: grid;
-      flex-direction: column;
-      padding: 20px 100px;
+      margin: 0 auto;
       gap: 15px;
       justify-content: space-between;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -147,9 +152,9 @@
       object-fit: cover;
 }
 .bottone{
-     background-color: #ec114f;
+     background-color: #34c5ff;
      color: white;
-     padding: 1px 50%; 
+     padding: 1px 43%; 
      cursor: pointer;
      margin: auto;
      border-radius: 3px;
@@ -167,23 +172,16 @@
 
 }
 .fine{
-      background-color: #26d288;
-      max-width: 1500px;
-      margin: 0;
-      display: flex;
+      background-color: #5b5b5b;
+      margin: 0 auto;
       justify-content: space-between;
-      padding: 30px 50px;
-       display: flex;
-      align-items: center;
-      justify-content: center;
+      text-align: center;
+      padding: 10px 0px;
+      gap: 20px;
 }
 .fine nav a{
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     margin: 0% auto;
+
      list-style: none;
-     gap: 20px;
      color: White;
 
 }
@@ -191,14 +189,14 @@
       color: black;
       }
 .grigliaitem a:hover {
-      color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
 }
 .detaglio h2{
      color: #26d288;
      padding-top: 3%;
 } 
 .detaglio p{
-     color: #ffffff;
+     color: #000000;
 } 
 .detaglio {
   padding: 5% 5%;
@@ -215,7 +213,7 @@
 .power{
   padding-bottom: 20px;
 }
-.glrigliaitem {
+.grligliaitem {
 
   text-align: center;
   padding-bottom: 2%;
@@ -238,15 +236,21 @@
 }
 .grigliaitem a {
   padding-bottom: 2%;
-  color: #ec114f;
+  color: #34c5ff;
   text-decoration: underline;
 
 }
-@media (max-width:600px) {
+@media (max-width:600px){
   header {
     flex-direction: column;
     align-items: flex-start;
     
+  }
+  .fine nav a{
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    margin: 0 auto;
   }
 
   header nav {
@@ -257,12 +261,21 @@
     margin-left: 0;
     margin-right: 20px;
   }
-  .images img{
-      width: 100%;
+  .scrittafoto button{
+     padding: 10px 20px;
+     font-size: 14px;
+     margin-top: 20px;
+    }
+     
+   .images img{
+      width: 300px;
+      height: 500px;
+      object-fit: cover;
       display: block;
-      max-width: 800px;
+      max-width: 500px;
       border-radius: 5%;
       padding-bottom: 3px;
+      margin: 0 auto;
 
     }
     .middlepage{
@@ -270,7 +283,8 @@
      flex-direction: column;
      align-items: center;
      gap: 4px;
-     text-align: center;
+  
+     max-width: 60%;
     }
     .grigliacontainer {
      display: flex;
@@ -278,6 +292,12 @@
      padding: 0px 0px;
      align-items: center;
      text-align: center;
+     width: 400px;
+     margin: 0 auto;
+    }
+    .dettaglio{
+      max-width: 500px;
+      padding: 0px 20px;
     }
     
 }
