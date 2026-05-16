@@ -1,21 +1,12 @@
- *    body {
-      background-color: #ffffff;
-          color: #2A2A2A;
-          font-family: 'Urbanist';
-          margin: 0;
-    
-     }
-     .body h1{
-       font-family: 'Urbanist',
-     }
-   .body h2{
-       font-family: 'Open Sans',
-     }
-          .body p{
-       font-family: 'Open Sans',
-     }
-  header {
-      background-color: #26d288;
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #EDFDFC;
+    font-family: instrument sans;
+    font-size: 16px;
+}
+header {
+      background-color: #006E7F;
       color: white;
       padding: 15px 40px;
       display: flex;
@@ -26,9 +17,7 @@
     header .logo {
       font-weight: bold;
       font-size: 10px;
-
     }
-
     header nav a {
       color: white;
       text-decoration: none;
@@ -47,99 +36,62 @@
       max-height: 350px;
       overflow: hidden;
     }
-
+    .foglio{
+     padding: 0px 40px;
+     padding-top:45px;
+    }
     .hero img {
       width: 100%;
+      object-position: bottom center;
+      height: 400px;
       display: block;
       object-fit: cover;
     }
-    .foglio{
-     color: rgb(0, 0, 0);
-     padding: 0px 100px;
-    }
-    .middlepage h2 {
-          color: rgb(0, 0, 0);
-          margin-top: 60px;
-          font-size: 24px;
-    }
-     .middlepage p {
-          color: rgb(0, 0, 0);
-          margin-top: 20px;
-          font-size: 16px;
-          max-width: 600px;
-    }
-     .middlepage {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      flex-direction: column;
-      padding-left: 9%;
-      gap: 1px;
-      
-    }
-    .images img{
- 
-     width: 80%;
-      display: block;
-      max-width: 500px;
-      border-radius: 5%;
-      max-height: 600px;
-
-
-    }    
-    .images {
-      max-width: 700%;
-      border-radius: 10px;
-      display: grid; 
-      flex-direction: column;
-      gap: 0px;
-      justify-content: space-between;
-      grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-      margin-top: 20px;
-    }
-
-    .scrittafoto h2{
-     color: #26d288;
-     ;
-     margin-top: 15px;
-    }
-     .scrittafoto p{
-          color: rgb(0, 0, 0);
-
-      }
-.scrittafoto button{
-     background-color: #34c5ff;
-     color: white;
-     padding: 10px 70px;
-     cursor: pointer;
-    
-     border-radius: 6px;
-}
-.sotto{
-      display: grid;
-      flex-direction: column;
-      max-width: 90%;
-      margin: 0 auto;
-      padding-bottom: 25px;
-      gap: 58px;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
-.cons1{
-     color: #26d288;
+    .middle {
+        align-items: center;
+        padding: 0px 20%;
+        margin: 0 auto;
+        overflow: fill;
+        }
+      .middlepage {
+        align-items: center;
+        padding: 0px 40px;
+        margin: 0 auto;
+        overflow: fill;
+        }
+        .images img {
+          width: 750px;
+          height: 500px;
+          display: block;
+          object-fit: fill;
+          border-radius: 30px;
+        }
+        .scrittafoto h2{
+          padding-top: 20px;
+          color: #006E7F;
+        }
+        .scrittafoto nav a{
+            color : #EC114F;
+        }
+         .scrittafoto nav a:hover{
+            color : #000000;
+        }
+        .cons1{
+     color: #006E7F;
      padding-top: 3%;
 }
 .cons1 a:hover {
-      text-decoration: underline;
-     color: #3c8dad;
+     color: #000000;
 }
 .cons1 a {
-      color: #34c5ff;
-      text-decoration: none;
+      color: #EC114F;
+       text-decoration: underline;
 }
 .cons1 img{
-      width: 100%;
+      width: 750px;
+      height: 300px;
       display: block;
-      max-width: 500px;
-      border-radius: 5%;
+      border-radius: 30px;
 }
 .consigliati{
  max-width: 90%;
@@ -150,29 +102,10 @@
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       margin-top: 20px;
       object-fit: cover;
-}
-.bottone{
-     background-color: #34c5ff;
-     color: white;
-     padding: 1px 43%; 
-     cursor: pointer;
-     margin: auto;
-     border-radius: 3px;
-     display: flex;
-     justify-content: center;
-     font-size: 6px;
-     width: fit-content;
-     align-content: center;
-     font-weight: thin;     
-     margin-bottom: 20px;
-}
-.bottone h2{
-      align-content: center;
-      width: fit-content;
-
+      padding-bottom: 30px;
 }
 .fine{
-      background-color: #5b5b5b;
+      background-color: #006E7F;
       margin: 0 auto;
       justify-content: space-between;
       text-align: center;
@@ -188,20 +121,7 @@
 .fine nav a:hover {
       color: black;
       }
-.grigliaitem a:hover {
-      color: rgb(0, 0, 0);
-}
-.detaglio h2{
-     color: #26d288;
-     padding-top: 3%;
-} 
-.detaglio p{
-     color: #000000;
-} 
-.detaglio {
-  padding: 5% 5%;
-}
-.grigliacontainer {
+      .grigliacontainer {
    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     gap: 200px;
@@ -220,95 +140,140 @@
   max-width: 1700px;
   margin: 48px;
   padding: 0px 16px;
+  border-radius: 32px;
+    border: 2px solid #3a3a3a;
+    padding: 34px 16px;
+    box-sizing: border-box;
 }
 .grigliaitem img {
   width: 100%;
-  border-radius: 5%;
+  border-radius: 20px;
   padding-top: 10px;
   object-fit: cover;
   max-width: 1700px;
   max-height: 1200px;
 }
 .grigliaitem p {
-  color: #26d288;
+  color: #006E7F;
   margin-top: 10px;
   object-fit: cover;
 }
 .grigliaitem a {
   padding-bottom: 2%;
-  color: #34c5ff;
+  color: #EC114F;
   text-decoration: underline;
 
 }
-@media (max-width:600px){
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-    
-  }
-  .fine nav a{
-    display: flex;
-    flex-direction: column;
-    max-width: 50%;
-    margin: 0 auto;
-  }
+.detaglio h2{
+     color: #006E7F;
+     padding-top: 3%;
+} 
+.detaglio p{
+     color: #000000;
+} 
+.detaglio {
+  padding: 5% 5%;
+}
+.contest {
+ padding: 0% 28%;
+ padding-bottom: 10%;
+ padding-top: 80px;
+}
+.contest h2{
+     color: #006E7F;
+     max-width: 100px;
+}
+.contest p{
+     color: #000000;
+     max-width: 600px;
 
-  header nav {
-    margin-top: 10px;
-  }
-
-  header nav a {
-    margin-left: 0;
-    margin-right: 20px;
-  }
-  .scrittafoto button{
-     padding: 10px 20px;
-     font-size: 14px;
-     margin-top: 20px;
-    }
-     
-   .images img{
-      width: 300px;
+}
+.piazza {
+  padding: 0% 28%;
+  padding-top: 10%;
+  max-width: 750px;
+}
+.piazza img{
+      width: 650px;
       height: 500px;
-      object-fit: cover;
       display: block;
-      max-width: 500px;
-      border-radius: 5%;
-      padding-bottom: 3px;
-      margin: 0 auto;
+      object-fit: fill;
+      border-radius: 30px;
 
-    }
-    .middlepage{
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     gap: 4px;
-  
-     max-width: 60%;
-    }
-    .grigliacontainer {
-     display: flex;
-     flex-direction: column;
-     padding: 0px 0px;
-     align-items: center;
-     text-align: center;
-     width: 400px;
-     margin: 0 auto;
-    }
-    .dettaglio{
-      max-width: 500px;
-      padding: 0px 20px;
-    }
-    
+}
+.piazza h2{
+     color: #006E7F;
+     padding-bottom: 2%;
+     padding-top: 3%;
+}
+.piazza p{
+   max-width: 600px;
 }
 @media (max-width:1920px){
   .grigliacontainer {
    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    padding: center;
+    padding: 0px 175px;
     padding-top: 80px;
     padding-bottom: 80px;
      align-items: center;
+  }
+     
+     .piazza img{
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: fill;
+      border-radius: 30px;
 }
+      .cons1 img{
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 30px;
+  }
+.images img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: fill;
+      border-radius: 30px;
+}
+}
+
+@media (max-width:600px){
+  header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    header .logo {
+      margin-bottom: 10px;
+    }
+
+    header nav a {
+      margin-left: 0;
+      margin-right: 20px;
+    }
+    .piazza img{
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: fill;
+      border-radius: 30px;
+  }
+  .cons1 img{
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 30px;
+  }
+  .images img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: fill;
+      border-radius: 30px;
+  }
 }
