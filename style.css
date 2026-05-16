@@ -43,29 +43,36 @@ header {
     .hero img {
       width: 100%;
       object-position: bottom center;
-      height: 400px;
+      max-height: 500px;
+      height: auto;
       display: block;
       object-fit: cover;
     }
+    .middle,
+    .middlepage,
+    .consigliati,
+    .contest,
+    .piazza,
+    .grigliacontainer
+     {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+  
+    }
     .middle {
-        align-items: center;
-        padding: 0px 20%;
-        margin: 0 auto;
-        overflow: fill;
-        }
-      .middlepage {
-        align-items: center;
-        padding: 0px 40px;
-        margin: 0 auto;
-        overflow: fill;
-        }
-        .images img {
-          width: 750px;
-          height: 500px;
-          display: block;
-          object-fit: fill;
-          border-radius: 30px;
-        }
+      align-items: center;
+    }
+    .middlepage {
+      align-items: center;
+    }
+    .images img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: fill;
+      border-radius: 30px;
+    }
         .scrittafoto h2{
           padding-top: 20px;
           color: #006E7F;
@@ -88,13 +95,13 @@ header {
        text-decoration: underline;
 }
 .cons1 img{
-      width: 750px;
-      height: 300px;
+      width: 100%;
+      height: auto;
       display: block;
       border-radius: 30px;
 }
 .consigliati{
- max-width: 90%;
+      max-width: 1200px;
       border-radius: 10px;
       margin: 0 auto;
       gap: 15px;
@@ -219,6 +226,10 @@ header {
     padding-bottom: 80px;
      align-items: center;
   }
+  .middle{
+    max-width: 700px;
+
+  }
      
      .piazza img{
       width: 100%;
@@ -251,7 +262,17 @@ header {
     header .logo {
       margin-bottom: 10px;
     }
+    .grigliacontainer {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0px 20px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+      align-items: center;
+      
 
+    }
     header nav a {
       margin-left: 0;
       margin-right: 20px;
@@ -275,5 +296,12 @@ header {
       display: block;
       object-fit: fill;
       border-radius: 30px;
+  }
+    
+  .fine nav a{
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    margin: 0 auto;
   }
 }
