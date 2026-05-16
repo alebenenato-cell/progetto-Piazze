@@ -48,17 +48,20 @@ header {
       display: block;
       object-fit: cover;
     }
+    * {
+      box-sizing: border-box;
+    }
+
     .middle,
     .middlepage,
     .consigliati,
     .contest,
     .piazza,
-    .grigliacontainer
-     {
-      max-width: 1200px;
+    .grigliacontainer,
+    .detaglio{
+      max-width: 700px;
       margin: 0 auto;
       padding: 0 20px;
-  
     }
     .middle {
       align-items: center;
@@ -101,6 +104,7 @@ header {
       border-radius: 30px;
 }
 .consigliati{
+      display: grid;
       max-width: 1200px;
       border-radius: 10px;
       margin: 0 auto;
@@ -116,49 +120,44 @@ header {
       margin: 0 auto;
       justify-content: space-between;
       text-align: center;
-      padding: 10px 0px;
+      padding: 20px 0px;
       gap: 20px;
 }
 .fine nav a{
-
      list-style: none;
      color: White;
-
 }
 .fine nav a:hover {
       color: black;
-      }
+}
       .grigliacontainer {
    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-    gap: 200px;
-    padding: 20px 0px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 40px 20px;
     max-width: 1200px;
-    padding: 0px 175px;
+    margin: 0 auto;
      align-items: center;
 }
 .power{
   padding-bottom: 20px;
 }
-.grligliaitem {
-
+.grligliaitem,
+.grigliaitem {
   text-align: center;
-  padding-bottom: 2%;
-  max-width: 1700px;
-  margin: 48px;
-  padding: 0px 16px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 24px 16px;
   border-radius: 32px;
-    border: 2px solid #3a3a3a;
-    padding: 34px 16px;
-    box-sizing: border-box;
+  border: 2px solid #3a3a3a;
 }
 .grigliaitem img {
   width: 100%;
   border-radius: 20px;
   padding-top: 10px;
   object-fit: cover;
-  max-width: 1700px;
-  max-height: 1200px;
+  max-width: 100%;
+  height: auto;
 }
 .grigliaitem p {
   color: #006E7F;
@@ -179,12 +178,11 @@ header {
      color: #000000;
 } 
 .detaglio {
-  padding: 5% 5%;
+  padding: 40px 20px;
 }
 .contest {
- padding: 0% 28%;
- padding-bottom: 10%;
- padding-top: 80px;
+  padding: 40px 20px 60px;
+  max-width: 900px;
 }
 .contest h2{
      color: #006E7F;
@@ -192,21 +190,18 @@ header {
 }
 .contest p{
      color: #000000;
-     max-width: 600px;
-
+     max-width: 100%;
 }
 .piazza {
-  padding: 0% 28%;
-  padding-top: 10%;
-  max-width: 750px;
+  padding: 40px 20px 20px;
+  max-width: 900px;
 }
 .piazza img{
-      width: 650px;
-      height: 500px;
+      width: 100%;
+      height: auto;
       display: block;
       object-fit: fill;
       border-radius: 30px;
-
 }
 .piazza h2{
      color: #006E7F;
@@ -214,43 +209,17 @@ header {
      padding-top: 3%;
 }
 .piazza p{
-   max-width: 600px;
+   max-width: 100%;
 }
-@media (max-width:1920px){
+@media (max-width:1200px){
   .grigliacontainer {
-   display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 0px 175px;
-    padding-top: 80px;
-    padding-bottom: 80px;
-     align-items: center;
+   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+   gap: 20px;
+   padding: 30px 16px;
   }
   .middle{
-    max-width: 700px;
-
+    max-width: 100%;
   }
-     
-     .piazza img{
-      width: 100%;
-      height: auto;
-      display: block;
-      object-fit: fill;
-      border-radius: 30px;
-}
-      .cons1 img{
-        width: 100%;
-        height: auto;
-        display: block;
-        border-radius: 30px;
-  }
-.images img {
-      width: 100%;
-      height: auto;
-      display: block;
-      object-fit: fill;
-      border-radius: 30px;
-}
 }
 
 @media (max-width:600px){
@@ -270,7 +239,7 @@ header {
     padding-top: 80px;
     padding-bottom: 80px;
       align-items: center;
-      
+
 
     }
     header nav a {
